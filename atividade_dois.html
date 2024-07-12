@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="atividade_dois.css">
+    <title>Pizzaria da Abgail</title>
+</head>
+<body>
+    <!-- 02) Criar um sistema utilizando HTML e JS, para a Pizzaria da Abgail (print anexo). Deve conter um título, a mensagem de promoção com 15% de desconto para pedidos acima de R$50 um menu select com 4 sabores, onde um deles custa menos que R$50, outro exatamente R$50, outros dois acima de R$50. Após selecionar o sabor, ao clicar no botão de comprar, devem ser mostrados em dois inputs: o valor do pedido e o valor com desconto se for acima de R$50. -->
+    <div class="div_pai_cardapio">
+        <div>
+            <h1>Pizzaria da Abgail</h1>
+            <p>Descontos de 15% acima de R$50</p>
+        </div>
+        <div>
+            <p>Escolha sua pizza:</p>
+            <select id="sabores_de_pizza">
+                <option value="lombinho">Lombinho</option>
+                <option value="calabresa">Calabresa</option>
+                <option value="portuguesa">Portuguesa</option>
+                <option value="camarao">Camarão</option>
+            </select>
+        </div>
+        <div>
+            <label>
+                <input placeholder="Valor" id="exibir_valor_da_pizza" readonly>
+            </label>
+            <label>
+                <input placeholder="Valor Final" id="exibir_valor_da_pizza_com_desconto" readonly>
+            </label>
+        </div>
+        <button onclick="call_functions()">COMPRAR</button>
+    </div>
+    <script src="atividade_dois.js"></script>
+</body>
+</html>
